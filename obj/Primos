@@ -1,0 +1,28 @@
+using System; 
+
+class Primos
+{
+    static void Main()
+    {
+        for (int i = 1; i <= 100; i++)
+        {
+            bool Primo = true;
+            for (int j = 2; j < i; j++)
+            {
+                if (i % j == 0)
+                {
+                    Primo = false;
+                    break; 
+                }
+            }
+
+            if (Primo)
+            {
+                Console.WriteLine($"Es primo: {i}");
+            }
+            {
+
+            }
+        }
+    }
+}
