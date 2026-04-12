@@ -1,0 +1,23 @@
+using System; 
+
+class Size
+{
+    public static double tamaño(double tama)
+    {
+        if (tama > 2) return tama / 10; else if (tama < 0.1) return tama * 10; else return tama; 
+    }
+
+    
+    static void Main(){
+
+        Console.WriteLine("inserte un tamaño"); 
+        double i = Convert.ToDouble(Console.ReadLine());
+
+        double R = tamaño(i);
+
+        Console.WriteLine($"tamañp {R}"); 
+    }
+
+   
+
+}
