@@ -48,6 +48,10 @@ int main(){
         std::cout << "pase buen dia!" << std::endl; 
         return 0; 
         break; 
+        default:
+        std::cout << "Pon una eleccion valida" << std::endl; 
+        return main();
+        break;
     }
     
 }
